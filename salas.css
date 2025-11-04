@@ -1,0 +1,158 @@
+body {
+    background-image: url(Imagens/naosei.jpg);
+    margin: 0px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+main {
+    padding-bottom: 2vw;
+}
+
+.afrase {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: rgb(13, 35, 65);
+    width: 100%;
+    margin-top: 1vw;
+}
+
+.afrase h1.playfair-display-medium {
+    font-family: "Playfair Display", serif;
+    font-weight: 500;
+    font-style: italic;
+}
+
+.afrase h1 {
+    color: rgb(50, 104, 204);
+}
+
+.sala {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background-color: rgb(23, 63, 115);
+}
+
+.sala p {
+    font-size: 2.4vw;
+    font-family: "EB Garamond", serif;
+    font-weight: 500;
+    font-style: normal;
+    color: rgb(221, 221, 221);
+    text-shadow: -1vw 1vw 1vw rgba(0, 0, 0, 1);
+    margin: 1vw 10vw;
+}
+
+.Imagens {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    background-color: rgba(13, 35, 65, 0.7);
+    width: 100%;
+}
+
+.Imagens div{
+    display: flex;
+    flex-direction: row;
+}
+
+.Imagens div div{
+    display: flex;
+    flex-direction: column;
+    margin-top: 2vw;
+    margin-bottom: 2vw;
+    margin-right: 0.5vw;
+    text-align: center;
+    cursor: pointer;
+    border-radius: 3vw;
+    transition: 0.3s, background-color 0.6s;
+}
+
+.last{
+    margin-right: -0,5vw;
+}
+
+.Imagens div div:hover{
+    transform: translateY(-1vw);
+    box-shadow: 1.5vw 1.5vw 2vw rgba(0, 0, 0, 0.5);
+    background-color: rgb(78, 113, 177);
+}
+
+.Imagens div img{
+    width: 13.5vw;
+    height: 13.5vw;
+    margin-top: 1vw;
+    margin-left: 1vw;
+    margin-right: 1vw;
+}
+
+.Imagens h1.playfair-display-medium {
+    font-family: "Playfair Display", serif;
+    font-weight: 500;
+    font-style: italic;
+}
+
+.Imagens h1 {
+    color: rgb(221, 221, 221);
+    font-size: 2vw;
+}
+
+@media (max-width: 768px) {
+
+    header nav {
+        flex-direction: column;
+        width: 100%;
+        padding: 10px 0;
+    }
+
+    header nav a {
+        font-size: 5vw;
+        padding: 10px;
+    }
+
+    header nav img {
+        width: 50%;
+        margin: 10px 0;
+    }
+
+    .afrase h1 {
+        font-size: 5vw;
+        text-align: center;
+        padding: 2vw;
+    }
+
+    .sala p {
+        font-size: 4vw;
+        text-shadow: -1vw 1vw 1vw rgba(0, 0, 0, 1);
+        margin: 3vw;
+    }
+
+    .Imagens{
+        flex-direction: column;
+    }
+
+    .Imagens div{
+        justify-content: space-around;
+        width: 100%;
+    }
+
+    .Imagens div div{
+        margin: 1vw;
+        display: block;
+    }
+
+    .Imagens div img{
+        width: 30vw;
+        height: 30vw;
+    }
+
+    .Imagens h1{
+        font-size: 3vw;
+    }
+}

@@ -1,0 +1,259 @@
+body {
+    background-image: url(Imagens/naosei.jpg);
+    margin: 0px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+header {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+}
+
+header nav {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+    width: 80%;
+}
+
+header nav a {
+    position: relative;
+    text-decoration: none;
+    color: white;
+    font-size: 2vw;
+    font-family: "EB Garamond", serif;
+    font-weight: 500;
+    font-style: normal;
+    transition: .5s;
+    padding: 6px 20px;
+}
+
+nav a:hover {
+    color: rgb(141, 232, 255);
+}
+
+nav a span {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    border-bottom: 2px solid rgb(141, 232, 255);
+    transform: scale(0) translateY(50px);
+    border-radius: 1vw;
+    transition: .5s;
+    opacity: 0;
+}
+
+nav a:hover span {
+    transform: scale(1) translateY(0);
+    opacity: 1;
+}
+
+.tudo {
+    background-color: rgba(23, 63, 115, 0.5);
+    padding-bottom: 2vw;
+}
+
+.introducao p {
+    font-size: 2vw;
+    font-family: "EB Garamond", serif;
+    font-weight: 500;
+    font-style: normal;
+    color: rgb(221, 221, 221);
+    text-shadow: -1vw 1vw 1vw rgba(0, 0, 0, 1);
+}
+
+.frase {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: rgb(13, 35, 65);
+    width: 100%;
+    margin: 1vw 0vw;
+}
+
+.frase h1.playfair-display-medium {
+    font-family: "Playfair Display", serif;
+    font-weight: 500;
+    font-style: italic;
+}
+
+.frase h1 {
+    color: rgb(50, 104, 204);
+}
+
+
+.primeiro {
+    display: flex;
+    flex-direction: column;
+    margin: 2vw;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.primeiro img {
+    margin: 1vw;
+    margin-bottom: -0.5vw;
+    width: 80vw;
+    height: 42vw;
+    border-radius: 0.3vw;
+    border: 0.1vw solid white;
+    box-shadow: 1vw
+        /*esquerda direita*/
+        1vw
+        /*baixo e cima*/
+        1vw rgba(0, 0, 0, 0.5);
+    ;
+}
+
+.primeiro p {
+    margin: 1vw 10vw;
+}
+
+.resumo {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.resumo p {
+    margin: 0 2vw;
+}
+
+.resumo div.um,
+.dois,
+.tres {
+    display: flex;
+    background-color: rgb(13, 35, 65);
+    width: 80%;
+    margin: 1vw;
+    border: solid 1px;
+    border-radius: 5px;
+    box-shadow: 1vw 1vw 1vw rgba(0, 0, 0, 0.5);
+    align-items: center;
+    justify-content: center;
+    padding-bottom: 5px;
+}
+
+.resumo div.um,
+.tres {
+    flex-direction: row;
+}
+
+.resumo div.dois {
+    flex-direction: row-reverse;
+}
+
+.resumo div img {
+    margin: 1vw;
+    width: 30vw;
+    height: 22vw;
+}
+
+.texto {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+.resumo h2.playfair-display-regular {
+    font-family: "Playfair Display", serif;
+
+    font-weight: 400;
+    font-style: italic;
+}
+
+.resumo h2 {
+    color: white;
+    font-size: 2.5vw;
+    text-shadow: -2vw 2vw 2vw rgba(0, 0, 0, 1);
+}
+
+.resumo div div span {
+    color: rgb(50, 104, 204);
+    ;
+}
+
+@media (max-width: 768px) {
+
+    /* NAVBAR */
+    header nav {
+        flex-direction: column;
+        width: 100%;
+        padding: 10px 0;
+    }
+
+    header nav a {
+        font-size: 5vw;
+        padding: 10px;
+    }
+
+    header nav img {
+        width: 50%;
+        margin: 10px 0;
+    }
+
+    /* FRASE DE BOAS-VINDAS */
+    .frase h1 {
+        font-size: 5vw;
+        text-align: center;
+        padding: 2vw;
+    }
+
+    /* INTRODUÇÃO */
+    .primeiro img {
+        width: 90vw;
+        height: auto;
+    }
+
+    .primeiro p {
+        margin: 3vw;
+        font-size: 4vw;
+    }
+
+    .introducao p {
+        font-size: 4vw;
+        text-shadow: -1vw 1vw 1vw rgba(0, 0, 0, 1);
+    }
+
+    /* RESUMO DAS SEÇÕES */
+    .resumo {
+        width: 100%;
+    }
+
+    .resumo div.um,
+    .resumo div.dois,
+    .resumo div.tres {
+        flex-direction: column !important;
+        width: 90%;
+        margin: 4vw 0;
+        padding-bottom: 3vw;
+    }
+
+    .resumo div img {
+        width: 80vw;
+        height: auto;
+    }
+
+    .resumo h2 {
+        font-size: 5vw;
+        text-align: center;
+    }
+
+    .resumo .texto p {
+        font-size: 4vw;
+        margin: 3vw;
+    }
+}

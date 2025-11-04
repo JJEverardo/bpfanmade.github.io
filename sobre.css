@@ -1,0 +1,97 @@
+body {
+    background-image: url(Imagens/naosei.jpg);
+    margin: 0px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+.tudo {
+    background-color: rgba(23, 63, 115, 0.5);
+    padding-bottom: 2vw;
+}
+
+.dogubomb{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: rgb(13, 35, 65);
+    width: 100%;
+    margin: 1vw 0vw;
+    text-align:center;
+}
+
+.dogubomb h1.playfair-display-medium {
+  font-family: "Playfair Display", serif;
+  font-weight: 500;
+  font-style: italic;
+}
+
+.dogubomb h1{
+    color: rgb(50, 104, 204);
+}
+
+.dreams{
+    text-align:center;
+}
+
+.dreams img{
+    margin: 1vw;
+    margin-bottom: -0.5vw;
+    width: 98%;
+    height:auto;
+    box-shadow: 1vw/*esquerda direita*/ 1vw/*baixo e cima*/ 1vw rgba(0, 0, 0, 0.5);;
+}
+
+.dreams,.resumo p {
+    font-size: 2vw;
+    font-family: "EB Garamond", serif;
+    font-weight: 500;
+    font-style: normal;
+    color: rgb(221, 221, 221);
+    text-shadow: -1vw 1vw 1vw rgba(0, 0, 0, 1);
+    margin: 1vw 10vw;
+}
+
+.resumo{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.resumo p{
+    margin: 0 2vw;
+}
+
+.resumo div.um,.dois,.tres{
+    display: flex;
+    background-color: rgb(13, 35, 65);
+    width: 80%;
+    margin: 1vw;
+    border: solid 1px;
+    border-radius: 5px;
+    box-shadow: 1vw 1vw 1vw rgba(0, 0, 0, 0.5);
+    align-items: center;
+    justify-content: center;
+    padding-bottom: 5px;
+}
+
+.resumo div img{
+    margin: 1vw;
+    width: 30vw;
+    height: 22vw;
+}
+
+.resumo h2.playfair-display-regular {
+  font-family: "Playfair Display", serif;
+  font-weight: 400;
+  font-style: italic;
+}
+
+.resumo h2{
+    color: white;
+    font-size: 2.5vw;
+    text-shadow: -2vw 2vw 2vw rgba(0, 0, 0, 1);
+}
